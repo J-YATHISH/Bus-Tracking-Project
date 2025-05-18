@@ -1,7 +1,7 @@
+import express from 'express'
 // ======================
 // 1. Import Required Tools
-// ======================
-const express = require('express');          // Web framework
+// ======================                    // Web framework
 const http = require('http');               // HTTP server
 const socketIo = require('socket.io');      // Real-time communication
 const cors = require('cors');               // Cross-origin access
@@ -24,7 +24,7 @@ const io = socketIo(server, {
 // ======================
 const pool = new Pool({
   user: 'your_db_username',
-  host: 'localhost',
+  host: 'localhost', 
   database: 'bus_tracking',
   password: 'your_password',
   port: 5432,
